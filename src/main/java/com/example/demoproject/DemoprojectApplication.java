@@ -27,10 +27,22 @@ public class DemoprojectApplication {
         List<User> users = userService.getAll();
 
         for (User user : users) {
-            log.info(String.format("\n Name: %s \n LastName: %s \n E-mail: %s", user.getFirstName(),
-                    user.getLastName(), user.getEmail()));
+
+            log.info(user.toString());
+//            log.info(String.format("\n Name: %s \n LastName: %s \n E-mail: %s", user.getFirstName(),
+//                    user.getLastName(), user.getEmail()));
         }
     }
+
+//    @PostConstruct
+//    public void postConstruct() {
+//        List<User> users = userService.getAll();
+//
+//        for (User user : users) {
+//            log.info(String.format("\n Name: %s \n LastName: %s \n E-mail: %s", user.getFirstName(),
+//                    user.getLastName(), user.getEmail()));
+//        }
+//    }
 }
 
 
